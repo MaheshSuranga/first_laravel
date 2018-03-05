@@ -76,6 +76,7 @@ return [
         'pgsql_production' => [
             'driver' => 'pgsql',
             'host' => $host,
+            'port' => env('DB_PORT', 3306),
             'database' => $database,
             'username' => $username,
             'password' => $password,
